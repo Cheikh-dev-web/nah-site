@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>محل التقي للمفروشات | AL-TAQI HOME</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
+body {background:#FFF8F0; color:#111; scroll-behavior:smooth;}
+header {position:fixed; width:100%; padding:20px 60px; display:flex; justify-content:space-between; background:rgba(47,53,66,0.95); box-shadow:0 2px 10px rgba(0,0,0,.05); z-index:1000; color:white;}
+.logo .ar {font-size:24px; font-weight:700;} .logo .en {font-size:12px; color:#FFD166;}
+nav a {margin-left:20px; text-decoration:none; color:white; font-weight:500;}
+nav a:hover {color:#FFD166;}
+
+/* HERO */
+.hero {height:100vh; background:url('https://images.unsplash.com/photo-1620190649178-7f53e72ef7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') center/cover; display:flex; align-items:center; padding:80px; color:white; text-shadow: 1px 1px 6px rgba(0,0,0,0.6);}
+.hero-text {max-width:520px;} .hero h1 {font-size:52px;} .hero p {margin:20px 0; font-size:18px;}
+.btn {background:#FF4D4D; color:#fff; padding:14px 40px; border-radius:30px; text-decoration:none; font-weight:700; transition:0.3s;}
+.btn:hover {background:#E63946;}
+
+/* SECTIONS */
+section {padding:100px 80px 80px; border-radius:15px; margin-top:60px;}
+h1,h2 {text-align:center; margin-bottom:40px;}
+
+/* CATEGORIES */
+#categories {background:#FFD166;}
+.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:30px;}
+.cat {background:#F2994A; padding:50px 0; text-align:center; border-radius:15px; font-size:22px; font-weight:700; transition:0.3s; cursor:pointer;}
+.cat:hover {background:#E63946; color:white; transform:scale(1.05);}
+
+/* PRODUCTS */
+#products {background:#D0E8F2;}
+.card img {width:100%; border-radius:18px; object-fit:cover; height:250px;}
+.card{text-align:center;}
+.card button {margin-top:15px; width:100%; padding:12px; background:#1E90FF; color:white; border:none; font-weight:700; transition:0.3s; cursor:pointer;}
+.card button:hover {background:#2563EB; transform:scale(1.05);}
+
+/* CONTACT */
+#contact {background:#F1F2F6;}
+form input, form textarea {width:100%; padding:12px; margin-bottom:10px; border:1px solid #ccc; border-radius:8px;}
+form button {background:#FF4D4D; color:white; padding:12px 20px; border:none; border-radius:8px; cursor:pointer; font-weight:700; transition:0.3s;}
+form button:hover {background:#E63946;}
+
+/* FOOTER */
+footer {background:#2F3542; color:white; padding:40px; text-align:center;}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {position:fixed; bottom:20px; left:20px; background:#25D366; color:white; font-size:26px; padding:14px 16px; border-radius:50%; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,.3); z-index:999;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><span class="ar">التقي</span> | <span class="en">AL-TAQI HOME</span></div>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#categories">أقسام</a>
+    <a href="#products">منتجات</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+</header>
+
+<!-- HERO / الصفحة الرئيسية -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>أناقة بيتك تبدأ من هنا</h1>
+    <p>راحة • أناقة • جودة تدوم</p>
+    <a href="#categories" class="btn">استعرض المنتجات</a>
+  </div>
+</section>
+
+<!-- CATEGORIES / الأقسام -->
+<section id="categories">
+  <h2>تسوق حسب الأقسام</h2>
+  <div class="grid">
+    <div class="cat">🛋️ جلسات</div>
+    <div class="cat">🪑 صالونات</div>
+    <div class="cat">🛏️ غرف نوم</div>
+    <div class="cat">🧶 سجاد وستائر</div>
+  </div>
+</section>
+
+<!-- PRODUCTS / المنتجات -->
+<section id="products">
+  <h2>منتجات مختارة</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598300052217-9b28b52da62c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="كنب فاخر">
+      <h3>كنب فاخر</h3>
+      <p>35000 دج</p>
+      <button>طلب عبر واتساب</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1616628188390-1c232d84b7ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="جلسة عصرية">
+      <h3>جلسة عصرية</h3>
+      <p>58000 دج</p>
+      <button>طلب عبر واتساب</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598300052182-1e44f8939a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="صالون فاخر">
+      <h3>صالون فاخر</h3>
+      <p>89000 دج</p>
+      <button>طلب عبر واتساب</button>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1616629492437-3ad79b40a911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="جلسة مودرن">
+      <h3>جلسة مودرن</h3>
+      <p>67000 دج</p>
+      <button>طلب عبر واتساب</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / تواصل معنا -->
+<section id="contact">
+  <h1>تواصل معنا</h1>
+  <p>📞 الهاتف: 49717504</p>
+  <p>💬 واتساب: 49717594</p>
+  <p>📍 الموقع: برمير – سوق سيدي</p>
+
+  <h2>ارسل رسالة</h2>
+  <form onsubmit="alert('تم إرسال رسالتك!'); return false;">
+    <input type="text" placeholder="الاسم" required><br>
+    <input type="email" placeholder="البريد الإلكتروني" required><br>
+    <textarea placeholder="رسالتك" required></textarea><br>
+    <button type="submit">إرسال</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 محل التقي للمفروشات | AL-TAQI HOME</p>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/22249717594" class="whatsapp-float" target="_blank">💬</a>
+
+<script>
+document.querySelectorAll("button").forEach(btn => {
+  btn.onclick = () => {
+    window.open("https://wa.me/22249717594", "_blank");
+  };
+});
+</script>
+
+</body>
+</html>
